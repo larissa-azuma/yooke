@@ -1,10 +1,10 @@
-import { Button } from '@mui/material';
 import React from 'react';
+import ButtonComponent from './Components/Button/button';
 
 const App = () => {
   return (
     <div>
-        <Button />
+        <ButtonComponent/>
     </div>
   )
 }
