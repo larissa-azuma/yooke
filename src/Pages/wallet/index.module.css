@@ -1,67 +1,88 @@
 .heading {
-    text-align: center;
-    font-optical-sizing: auto;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 43px;
-  }
-  .box {
-    text-align: center;
-    border: 1px solid;
-    width: 90%;
-    height: 250px ;
-    top: 132px;
-    left: 24px;
-    gap: 0px;
-    opacity: 0px;
-    color: #fff;
-    background-color: #001023;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+}
+.box {
+  text-align: center;
+  border: 1px solid;
+  width: 90%;
+  height: 250px;
+  top: 132px;
+  left: 24px;
+  gap: 0px;
+  opacity: 0px;
+  color: #fff;
+  background-color: #001023;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px;
+  margin-left: 60px;
+  padding: 70px 0 70px 0;
+}
+.box:hover {
+  border: 3px solid #22cea6;
+}
+.button {
+  width: 153.33px;
+  height: 37.67px;
+  top: 251px;
+  left: 114px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 10px;
+  margin-left: 540px;
+  margin-bottom: 100px;
+}
+.button:hover {
+  border: 3px solid #22cea6;
+  text-decoration:2px underline #22cea6;
+
+
+}
+.p {
+  font-family: Jost;
+  font-size: 15.67px;
+  font-weight: 400;
+  line-height: 20.75px;
+}
+
+.textbox {
+  text-align: center;
+}
+.price {
+  font-family: Jost;
+  font-size: 40.14px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+}
+.price:hover {
+  text-decoration: underline #22cea6;
+  cursor: default;
+}
+.liste {
+  width: 175px;
+  height: 28px;
+  margin-top: 368px;
+  margin-left: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Jost;
+  font-size: 19.33px;
+  font-weight: 400;
+  line-height: 27.94px;
+  text-align: left;
+  
+}
+.liste:hover{
+    text-decoration: underline #22cea6;
+
+}
+.list{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1px;
-    margin-left:60px; 
-    padding: 70px 0 70px 0;
-  
-  }
-  .box:hover{
-  border: 3px solid #22CEA6;
-  
-  }
-  .button {
-    width: 153.33px;
-    height: 37.67px;
-    top: 251px;
-    left: 114px;
-    gap: 0px;
-    opacity: 0px;
-    border-radius: 10px;
-     margin-left: 540px;
-    margin-bottom: 100px; 
-  }
-  .button:hover{
-      border: 3px solid #22CEA6;
-      ;
-  }
-  .p {
-    font-family: Jost;
-    font-size: 15.67px;
-    font-weight: 400;
-    line-height: 20.75px;
-  }
-  
-  .textbox {
-    text-align: center;
-  }
-  .price {
-    font-family: Jost;
-    font-size: 40.14px;
-    font-weight: 700;
-     line-height: 58px; 
-    text-align: center;
-  
-  }
-  .price:hover{
-      text-decoration: underline #22CEA6;
-  }
-  
+    grid-template-columns: 1fr 1fr 1fr;
+} 
