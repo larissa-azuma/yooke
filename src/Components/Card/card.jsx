@@ -12,14 +12,53 @@ export default function BasicCard() {
       display="flex"
       flexDirection="column"
       alignItems="center"
+     
+      
     >
-      <HighlightOffIcon color="error" />
+      <HighlightOffIcon
+        color="error"
+        sx={{
+          width: "5%",
+          height: "5%",
+          Top: "24px",
+          Left: "24px",
+        }}
+      />
       <Box display="flex" alignItems="center">
-        <Box ml={1}>
-          Vous avez des fonds insuffisants dans votre porte-monnaie
+        <Box
+          ml={1}
+          fontFamily={"jost"}
+          sx={{
+            fontSize: "20px",
+          }}
+        >
+          Vous avez des fonds <br />
+          insuffisants dans votre porte-
+          <br />
+          monnaie
         </Box>
-      </Box >
-      <Button variant="contained" color="primary" style={{ width: '100%' }} >
+      </Box>
+
+      <Button
+        variant="contained"
+        sx={{
+          borderBottomLeftRadius: "24px",
+          borderBottomRightRadius: "24px",
+          padding: "6",
+          fontWeight: "bold",
+          textTransform: "none",
+          backgroundColor: "#001023",
+          width: "100%",
+          height: "40px",
+          top: "10px",
+          Left: "60px",
+
+          "&:hover": {
+            backgroundColor: "#001023",
+            boxShadow: "none",
+          },
+        }}
+      >
         Rechargez votre porte-monnaie
       </Button>
     </Box>
