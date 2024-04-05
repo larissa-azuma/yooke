@@ -1,4 +1,42 @@
-.main{
-    text-align: center;
-    
+.main {
+  text-align: center;
 }
+
+h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27.46px;
+}
+
+p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 24.67px;
+  line-height: 35.64px;
+}
+
+.legendText {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  size: 24.67px;
+  line-height: 35.64px;
+  
+}
+
+.ratingStars{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    color: #001023;
+    font-size: medium;
+    
+    
+
+}
+
+.button-envoyer{
+    background-color: #001023;
+    color: #001023;
+}
+
