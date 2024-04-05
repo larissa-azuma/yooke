@@ -1,10 +1,10 @@
 import React from 'react'
-import Card from './Components/Card'
+import Wallet from './Pages/wallet'
 
 const App = () => {
   return (
     <div>
-    <Card/>
+      <Wallet/>
     </div>
   )
 }

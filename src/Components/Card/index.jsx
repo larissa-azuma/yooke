@@ -11,7 +11,7 @@ const Card = () => {
   return (
     <>
     <div>
-    <div  className={styles.cardd}>
+    <div className={styles.cardd}>
     <div className={styles.cardContainer}>
     <div className={styles.card}>
     <div className={styles.cardImage}>
@@ -31,10 +31,10 @@ const Card = () => {
     <div className={styles.cardImage}>
     <img src={image2}alt='img'/>
     </div>
-    <div className={styles.cardContent}>
-    <div className={styles.textContainer}>
-    <h5 className={styles.title}>Double booking</h5>
-    <p className={styles.description}>Réserver 2 place</p>
+    <div className={styles.cardContent2}>
+    <div className={styles.textContainer2}>
+    <h5 className={styles.title2}>Double booking</h5>
+    <p className={styles.description2}>Réserver 2 place</p>
     </div>
     </div>
     </div>
