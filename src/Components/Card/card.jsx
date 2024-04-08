@@ -12,8 +12,8 @@ export default function BasicCard() {
       display="flex"
       flexDirection="column"
       alignItems="center"
-     
-      
+      padding="0"
+      margin={0} 
     >
       <HighlightOffIcon
         color="error"
@@ -29,7 +29,7 @@ export default function BasicCard() {
           ml={1}
           fontFamily={"jost"}
           sx={{
-            fontSize: "20px",
+            fontSize: "18px",
           }}
         >
           Vous avez des fonds <br />
@@ -44,7 +44,8 @@ export default function BasicCard() {
         sx={{
           borderBottomLeftRadius: "24px",
           borderBottomRightRadius: "24px",
-          padding: "6",
+        //   padding: "0",
+        //   margin:"0",
           fontWeight: "bold",
           textTransform: "none",
           backgroundColor: "#001023",
