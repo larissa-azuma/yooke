@@ -7,15 +7,15 @@ const trajetData = [
 ];
 
 const location =  [
-    {  time: '07:30 AM', date:'o3 mars 2024',price: '1,000 FCFA', seats: '2 Places Vides' },
-    {  time:'8:00 AM', date:'o3 mars 2024', price:'1,000 FCFA',seats:'2 Places Vides'},
-    {  time:'5:00 AM', date:'o3 mars 2024',   price:'500 FCFA',seats:'1 Places Vides'},
-    {  time:'6:30 AM', date:'12 mars 2024',  price:'1,500 FCFA',seats:'3 Places Vides'},
-    {  time:'7:15 AM', date:'12 mars 2024',  price:'1,500 FCFA',seats:'3 Places Vides'},
-    {  time:'3:45 AM', date:'12 mars 2024',  price:'2,000 FCFA',seats:'4 Places Vides'},
-    {  time:'6:45 AM', date:'12 mars 2024',  price:'1,000 FCFA',seats:'2 Places Vides'},
-    {  time:'6:45 AM', date:'o2 april 2024', price:'2,000 FCFA',seats:'4 Places Vides'},
-    {  time:'04:30 AM',date:'o2 april 2024',  price:'1,500 FCFA',seats:'3 Places Vides'},
+    {  time: '07:30 AM', date:'o3 mars 2024',price: '1,000 FCFA',seatsAvailable: '2 Places Vides' },
+    {  time:'8:00 AM', date:'o3 mars 2024', price:'1,000 FCFA', seatsAvailable:'2 Places Vides'},
+    {  time:'5:00 AM', date:'o3 mars 2024',   price:'500 FCFA', seatsAvailable:'1 Places Vides'},
+    {  time:'6:30 AM', date:'12 mars 2024',  price:'1,500 FCFA', seatsAvailable:'3 Places Vides'},
+    {  time:'7:15 AM', date:'12 mars 2024',  price:'1,500 FCFA',seatsAvailable:'3 Places Vides'},
+    {  time:'3:45 AM', date:'12 mars 2024',  price:'2,000 FCFA',seatsAvailable:'4 Places Vides'},
+    {  time:'6:45 AM', date:'12 mars 2024',  price:'1,000 FCFA', seatsAvailable:'2 Places Vides'},
+    {  time:'6:45 AM', date:'o2 april 2024', price:'2,000 FCFA', seatsAvailable:'4 Places Vides'},
+    {  time:'04:30 AM',date:'o2 april 2024',  price:'1,500 FCFA',seatsAvailable:'3 Places Vides'},
 
 ];
 
@@ -44,10 +44,11 @@ function Trajetdisponible() {
       {location.map((route, index) => (
         <div key={index} className="route-card">
            <div> 
-          <p>Departure Time: {route.time}</p>
-          <p>Date: {route.date}</p>
-          <p >Price: {route.price} FCFA</p>
-          <p>Seats Available: {route.seatsAvailable}</p>
+          <p className='Deperture time'> {route.time}</p>
+          <p className='time'>{route.date}</p>
+          <p className='price' > {route.price} </p>
+          <p className='seats available'> {route.seatsAvailable}</p>
+          <div></div>
         </div>
         </div>
       ))}
