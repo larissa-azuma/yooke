@@ -8,7 +8,7 @@ function Largent () {
       <AppBar position="static" sx={{bgcolor:'#001023'}}>
 
         <Toolbar>
-          <Typography variant="h3" > 
+          <Typography variant="h3" sx={{className:'center'}} > 
           Ajoutez de l'argent
           </Typography>
         </Toolbar>
@@ -39,7 +39,27 @@ function Largent () {
       />
 
       {/* Order Button */}
-      <Button variant="contained" sx={{bgcolor:'#001023'}}>   Commande</Button>  
+      <Button
+        variant="contained"
+        sx={{
+          borderBottomLeftRadius: "24px",
+          borderBottomRightRadius: "24px",
+          fontWeight: "bold",
+          textTransform: "none",
+          backgroundColor: "#001023",
+          width: "100%",
+          height: "40px",
+          top: "10px",
+          Left: "60px",
+
+          "&:hover": {
+            backgroundColor: "#001023",
+            boxShadow: "none",
+          },
+        }}
+      >
+       Retour à l’accueil
+      </Button> 
     </div>
   );
 };
