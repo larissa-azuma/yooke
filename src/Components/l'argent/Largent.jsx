@@ -1,21 +1,24 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Card, TextField, Button } from '@mui/material';
-import Picture1 from '../../assets/images/Picture1.png';
 
 function Largent () {
   return (
     <div>
       {/* Header */}
-      <AppBar position="static">
+      <AppBar position="static" sx={{bgcolor:'#001023'}}>
+
         <Toolbar>
-          <Typography variant="h3">Ajoutez de l'argent</Typography>
+          <Typography variant="h3" > 
+          Ajoutez de l'argent
+          </Typography>
         </Toolbar>
       </AppBar>
-
+             
       {/* Money Card */}
       <Card>
-    
-        <img src="Picture1" alt="Picture1.png" />
+      
+
+      
       </Card>
 
       {/* Input Fields */}
@@ -36,9 +39,7 @@ function Largent () {
       />
 
       {/* Order Button */}
-      <Button variant="contained" color="primary">
-        Commande
-      </Button>
+      <Button variant="contained" sx={{bgcolor:'#001023'}}>   Commande</Button>  
     </div>
   );
 };
