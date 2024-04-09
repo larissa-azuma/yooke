@@ -1,5 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Card, TextField, Button } from '@mui/material';
+import Project1 from "../../assets/images/Picture1.png";
+import Project2 from "../../assets/images/Picture2.png";
 
 function Largent () {
   return (
@@ -16,7 +18,8 @@ function Largent () {
              
       {/* Money Card */}
       <Card>
-      
+      <img src={Project1}  alt='Project1'></img>
+      <img src={Project2}  alt='Project2'></img>
 
       
       </Card>
