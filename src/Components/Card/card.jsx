@@ -21,7 +21,7 @@ export default function CardPrompt() {
         sx={{
           width: "7%",
           height: "10%",
-          Top: "50px",
+          Top: "10px",
           marginTop: "5px",
         }}
       />
@@ -31,6 +31,8 @@ export default function CardPrompt() {
         fontFamily={"jost"}
           sx={{
             fontSize: "20px",
+            marginTop:"10px",
+            textAlign:"center",
           }}
         >
           Le instructions pour recharger <br />
