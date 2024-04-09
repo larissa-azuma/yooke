@@ -1,11 +1,12 @@
 import React from 'react'
-import Form from './Components/Form/Form'
+import Largent from './Components/l\'argent/Largent'
 
 function App() {
   return (
     <div>
-        <Form/>
-
+  
+    <Largent/>
+    
     </div>
   )
 }
