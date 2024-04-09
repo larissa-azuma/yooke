@@ -1,10 +1,11 @@
 import React from 'react'
-import Form from './Components/Form/Form'
+import Commande from './Components/commande/Commande'
 
 function App() {
   return (
     <div>
-        <Form/>
+    
+<Commande/>
 
     </div>
   )
