@@ -1,10 +1,11 @@
 import React from 'react'
-import Form from './Components/Form/Form'
+import CardPrompt from './Components/annuler/Annuler'
+
 
 function App() {
   return (
     <div>
-        <Form/>
+    <CardPrompt/>
 
     </div>
   )
