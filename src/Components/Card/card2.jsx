@@ -54,7 +54,7 @@ export default function CardPrompt2() {
 
           "&:hover": {
             backgroundColor: " #001023",
-            boxShadow: "none",
+            boxShadow: "",
           },
         }}
       >
