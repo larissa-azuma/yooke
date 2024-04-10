@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import HighlightOffRoundedIcon from '@mui/icons-material/HighlightOffRounded';
 
 export default function CardPrompt2() {
   return (
@@ -16,8 +16,8 @@ export default function CardPrompt2() {
       margin={0}
      
     >
-      <CheckCircleOutlineIcon
-        color="success"
+      <HighlightOffRoundedIcon
+        color="error"
         sx={{
           width: "7%",
           height: "10%",
@@ -35,9 +35,7 @@ export default function CardPrompt2() {
             textAlign:"center",
           }}
         >
-          Le instructions pour recharger <br />
-          votre porte-monnaie ont été envoyées à votre numéro de <br />
-          téléphone avec succès !
+          Vous avez déjà réservé un voyage,<br/> vous ne pouvez réserver qu'un<br/> seul voyage à la fois. 
         </Box>
       </Box>
 
@@ -48,19 +46,19 @@ export default function CardPrompt2() {
           borderBottomRightRadius: "24px",
           fontWeight: "bold",
           textTransform: "none",
-          backgroundColor: "black",
+          backgroundColor: "#001023",
           width: "100%",
           height: "40px",
           top: "10px",
           Left: "60px",
 
           "&:hover": {
-            backgroundColor: "black",
+            backgroundColor: " #001023",
             boxShadow: "none",
           },
         }}
       >
-       Retour à l’accueil
+       Voir le voyage réservé
       </Button>
     </Box>
   );

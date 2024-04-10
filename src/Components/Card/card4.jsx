@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
-export default function CardPrompt2() {
+export default function CardPrompt4() {
   return (
     <Box
       bgcolor="grey.200"
@@ -35,33 +35,9 @@ export default function CardPrompt2() {
             textAlign:"center",
           }}
         >
-          Le instructions pour recharger <br />
-          votre porte-monnaie ont été envoyées à votre numéro de <br />
-          téléphone avec succès !
+          Vous pouvez de nouveau<br/> faire une commande.
         </Box>
       </Box>
-
-      <Button
-        variant="contained"
-        sx={{
-          borderBottomLeftRadius: "24px",
-          borderBottomRightRadius: "24px",
-          fontWeight: "bold",
-          textTransform: "none",
-          backgroundColor: "black",
-          width: "100%",
-          height: "40px",
-          top: "10px",
-          Left: "60px",
-
-          "&:hover": {
-            backgroundColor: "black",
-            boxShadow: "none",
-          },
-        }}
-      >
-       Retour à l’accueil
-      </Button>
     </Box>
   );
 }

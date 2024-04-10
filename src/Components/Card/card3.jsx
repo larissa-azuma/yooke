@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import QuestionMarkRoundedIcon from '@mui/icons-material/QuestionMarkRounded';
 
-export default function CardPrompt2() {
+export default function CardPrompt3() {
   return (
     <Box
       bgcolor="grey.200"
@@ -16,8 +16,8 @@ export default function CardPrompt2() {
       margin={0}
      
     >
-      <CheckCircleOutlineIcon
-        color="success"
+      <QuestionMarkRoundedIcon
+        color="error"
         sx={{
           width: "7%",
           height: "10%",
@@ -35,9 +35,7 @@ export default function CardPrompt2() {
             textAlign:"center",
           }}
         >
-          Le instructions pour recharger <br />
-          votre porte-monnaie ont été envoyées à votre numéro de <br />
-          téléphone avec succès !
+          Êtes-vous sûr de vouloir <br/>annuler votre voyage prévu?
         </Box>
       </Box>
 
@@ -48,19 +46,19 @@ export default function CardPrompt2() {
           borderBottomRightRadius: "24px",
           fontWeight: "bold",
           textTransform: "none",
-          backgroundColor: "black",
+          backgroundColor: "#ED0F49",
           width: "100%",
           height: "40px",
           top: "10px",
           Left: "60px",
 
           "&:hover": {
-            backgroundColor: "black",
+            backgroundColor: "#ED0F49",
             boxShadow: "none",
           },
         }}
       >
-       Retour à l’accueil
+       Oui, annuler
       </Button>
     </Box>
   );
