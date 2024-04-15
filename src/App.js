@@ -1,11 +1,13 @@
 import React from 'react'
-import Voyager from './Pages/voyager'
+import Valide from './Components/notifications/Valide'
+// import Voyager from './Pages/voyager'
 
 
 function App() {
   return (
     <div>
-        <Voyager/>
+        {/* <Voyager/> */}
+        <Valide/>
 
     </div>
   )
