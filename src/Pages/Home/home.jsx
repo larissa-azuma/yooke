@@ -46,6 +46,7 @@ export default function SquareCorners() {
             fontSize: "3rem",
             width: "20%",
             height: "20%",
+            color:"#001023"
           }}
         />
         <p
