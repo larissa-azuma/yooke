@@ -8,10 +8,10 @@ import JourneyDetails from "./Pages/Home/home";
 const App = () => {
   return (
     <div>
-      <CardPrompt />
+      {/* <CardPrompt />
       <CardPrompt2/>
       <CardPrompt3/>
-      <CardPrompt4/>
+      <CardPrompt4/> */}
       <JourneyDetails />
     </div>
   );
