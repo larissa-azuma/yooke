@@ -1,31 +1,60 @@
 import React from "react";
 import "./index.css";
 import Valideimg from "../../assets/images/valide.png";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import LocalTaxiOutlinedIcon from '@mui/icons-material/LocalTaxiOutlined';
+import EventSeatIcon from '@mui/icons-material/EventSeat';
+import PaymentsOutlinedIcon from '@mui/icons-material/PaymentsOutlined';
 
 function Valide() {
   return (
     <div className="main">
       <div className="valide">
-        <nav className="valid-nav">
-          <h1 className="valide.text">Les détails du trajet en cours</h1>
+        <div className="divp">
+        <h1> 
+           <ArrowBackIosIcon />
+           Les détails du trajet en cours
+           </h1>
+        </div>
+          
 
-          <h2>En route vers votre destination</h2>
-
-          <h3>Avenue des Banques</h3>
-        </nav>
+          <h3>
+            <LocalTaxiOutlinedIcon />
+            En route vers votre destination
+            </h3>
+          <p className="avn">Avenue des Banques</p>
+      
       </div>
       <div>
         <div>
-          <h2 className="h2-2">Nombre de Places Réservées</h2>
+          <h2 className="h2-2">
+            <EventSeatIcon/>
+            Nombre de Places Réservées
+            </h2>
           <p className="p1">Vous avez 2 places réservées</p>
-          <p className="p2">
+          <hr/>
+          <div className="imgtext">
+            <div> 
+            
+            </div>
+            <div className="push">
+            <p className="p2.a">
             <img src={Valideimg} className="img" />
-            Veuillez noter que le trajet ne commencera qu'une fois que les
-            places restantes seront réservées et qu'un chauffeur aura été
-            affecté à votre voyage.
+            Veuillez noter que le trajet ne commencera<br/>
+             qu'une fois que les places restantes seront <br/>
+            réservées et qu'un chauffeur aura été
+            affecté à <br/>
+             votre voyage.
           </p>
+            </div>
+         
+          </div>
+         
           <div className="div-sub2">
-            <h4>Tarif du trajet</h4>
+            <h4>
+              <PaymentsOutlinedIcon/>
+              Tarif du trajet
+              </h4>
             <h4 className="h-center">500 FCFA/place</h4>
           </div>
           <div className="h2-center">

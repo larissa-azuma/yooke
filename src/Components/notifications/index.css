@@ -6,21 +6,29 @@
 
 } */
 
-.valid-nav {
+/* .valid-nav {
     background-color: #009245;
     width: full;
     height: 188px;
     padding: 2rem;
-  }
+  } */
   
   .valide {
     align-content: center;
     font-family: "Jost", sans-serif;
     color: aliceblue;
     line-height: 27.94px;
-    size: 19.33px;
+    background-color: #009245;
+    width: full;
+    height: 188px;
+    padding: 2rem;
+    justify-content: space-between;
   }
   
+ 
+  .avn{
+    padding-left: 1.5rem;
+  }
   
   .h2-2{
       align-content: center;
@@ -68,4 +76,12 @@
 
   .div-4{
     text-align: left;
+  }
+
+  .imgtext{
+    display: flex;
+    
+  }
+  .p2.a{
+    justify-content: center;
   }
