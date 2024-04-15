@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import Rating from "@mui/material/Rating";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import "../../../src/App.css";
+
 const DemoPaper = styled(Paper)(({ theme }) => ({
   width: 300,
   height: 500,
@@ -16,7 +17,7 @@ const DemoPaper = styled(Paper)(({ theme }) => ({
 }));
 
 export default function SquareCorners() {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState(1);
   return (
     <Stack direction="row" spacing={2}>
       <DemoPaper
