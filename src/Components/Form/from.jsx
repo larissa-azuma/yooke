@@ -30,9 +30,7 @@ export default function AlertDialog() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        {/* <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
-        </DialogTitle> */}
+       
         <DialogContent>
         <CheckCircleOutlinedIcon
             color="success"

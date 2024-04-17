@@ -6,7 +6,6 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-// import DialogTitle from '@mui/material/DialogTitle';
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 
 export default function AlertDialog() {
@@ -31,9 +30,7 @@ export default function AlertDialog() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        {/* <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
-        </DialogTitle> */}
+       
         <DialogContent>
             <CancelOutlinedIcon  color="error"
         sx={{
@@ -56,9 +53,7 @@ export default function AlertDialog() {
         "&:hover": {
             backgroundColor: " #001023",
             boxShadow: "",
-          },   }}>
-
-                    
+          },   }}>          
           Rechargez votre porte-monnaie
           </Button>
         </DialogActions>
