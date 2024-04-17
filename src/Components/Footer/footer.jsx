@@ -1,13 +1,10 @@
-
-
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-// import DialogTitle from '@mui/material/DialogTitle';
-import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 
 export default function AlertDialog() {
   const [open, setOpen] = React.useState(false);
@@ -23,7 +20,7 @@ export default function AlertDialog() {
   return (
     <React.Fragment>
       <Button variant="outlined" onClick={handleClickOpen}>
-      Rechargez votre porte-monnaie
+      Oui, annuler
       </Button>
       <Dialog
         open={open}
@@ -35,31 +32,38 @@ export default function AlertDialog() {
           {"Use Google's location service?"}
         </DialogTitle> */}
         <DialogContent>
-            <CancelOutlinedIcon  color="error"
-        sx={{
-          width: "15%",
-          height: "10%",
-          Top: "10px",
-          marginTop: "5px",
-          justifyContent:"center"
-        }}/>
-          <DialogContentText id="alert-dialog-description" sx={{fontFamily:"jost",
-        fontSize:"27px"}}>
-          Vous avez des fonds insuffisants dans votre porte-monnaie
+          
+          <QuestionMarkOutlinedIcon color="error"
+            sx={{
+              width: "15%",
+              height: "10%",
+              Top: "10px",
+              marginTop: "5px",
+              justifyContent: "center",
+            }}/>
+          <DialogContentText
+            id="alert-dialog-description"
+            sx={{ fontFamily: "jost", fontSize: "27px" }}
+          >
+            Êtes-vous sûr de vouloir annuler votre voyage prévu ?
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           {/* <Button onClick={handleClose}>Disagree</Button> */}
-          <Button onClick={handleClose} autoFocus sx={{fontFamily:"jost",
-        bgcolor:"#001023",
-        color: "white",
-        "&:hover": {
-            backgroundColor: " #001023",
-            boxShadow: "",
-          },   }}>
-
-                    
-          Rechargez votre porte-monnaie
+          <Button
+            onClick={handleClose}
+            autoFocus
+            sx={{
+              fontFamily: "jost",
+              bgcolor: "#ED0F49",
+              color: "white",
+              "&:hover": {
+                backgroundColor: " #ED0F49",
+                boxShadow: "",
+              },
+            }}
+          >
+            Oui, annuler
           </Button>
         </DialogActions>
       </Dialog>

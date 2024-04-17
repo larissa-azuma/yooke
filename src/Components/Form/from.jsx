@@ -6,8 +6,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-// import DialogTitle from '@mui/material/DialogTitle';
-import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
+import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 
 export default function AlertDialog() {
   const [open, setOpen] = React.useState(false);
@@ -35,32 +34,23 @@ export default function AlertDialog() {
           {"Use Google's location service?"}
         </DialogTitle> */}
         <DialogContent>
-            <CancelOutlinedIcon  color="error"
-        sx={{
-          width: "15%",
-          height: "10%",
-          Top: "10px",
-          marginTop: "5px",
-          justifyContent:"center"
-        }}/>
+        <CheckCircleOutlinedIcon
+            color="success"
+            sx={{
+              width: "15%",
+              height: "10%",
+              Top: "10px",
+              marginTop: "5px",
+              display:"flex",
+              justifyContent: "center",
+            }}
+          />
           <DialogContentText id="alert-dialog-description" sx={{fontFamily:"jost",
         fontSize:"27px"}}>
-          Vous avez des fonds insuffisants dans votre porte-monnaie
+          Vous pouvez de nouveau faire une commande.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          {/* <Button onClick={handleClose}>Disagree</Button> */}
-          <Button onClick={handleClose} autoFocus sx={{fontFamily:"jost",
-        bgcolor:"#001023",
-        color: "white",
-        "&:hover": {
-            backgroundColor: " #001023",
-            boxShadow: "",
-          },   }}>
-
-                    
-          Rechargez votre porte-monnaie
-          </Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>

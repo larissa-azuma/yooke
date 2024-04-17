@@ -4,7 +4,6 @@ import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
-// import DialogTitle from '@mui/material/DialogTitle';
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 
 export default function AlertDialog() {
