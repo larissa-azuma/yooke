@@ -39,7 +39,7 @@ function Valide() {
             </div>
             <div className="push">
             <p className="p2.a">
-            <img src={Valideimg} className="img" />
+            <img src={Valideimg} className="img"  alt="booking"/>
             Veuillez noter que le trajet ne commencera<br/>
              qu'une fois que les places restantes seront <br/>
             réservées et qu'un chauffeur aura été
