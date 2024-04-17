@@ -12,7 +12,9 @@ const Wallet = () => {
 		<div className={styles.wallet}>
 			<div>
 				<div className={styles.flexboxx}>
-					<h1>Porte-monnaie</h1>
+					<div className={styles.h1}>
+						<h1>Porte-monnaie</h1>
+					</div>
 					<div className={styles.flexbox}>
 						<p className={styles.parag}>Montant disponible</p>
 						<p className={styles.price}>800 FCFA</p>
@@ -20,7 +22,7 @@ const Wallet = () => {
 					</div>
 				</div>
 				<p className={styles.liste}>Liste des Transactions</p>
-        <hr className={styles.hr}/>
+				<hr className={styles.hr} />
 				<div className={styles.descr}>
 					<div className={styles.flex}>
 						<div className={styles.fleex}>
@@ -32,7 +34,7 @@ const Wallet = () => {
 						</div>
 						<p className={styles.pricce}>1 000 FCFA</p>
 					</div>
-          <hr className={styles.hr}/>
+					<hr className={styles.hr} />
 					<div className={styles.flex}>
 						<div className={styles.fleex}>
 							<img className={styles.icons} src={image4} alt="img" />
@@ -43,7 +45,7 @@ const Wallet = () => {
 						</div>
 						<p className={styles.pricce}>1 200 FCFA</p>
 					</div>
-          <hr className={styles.hr}/>
+					<hr className={styles.hr} />
 					<div className={styles.flex}>
 						<div className={styles.fleex}>
 							<img className={styles.icons} src={image5} alt="img" />
@@ -55,8 +57,7 @@ const Wallet = () => {
 						<p className={styles.priccee}>3 000 FCFA</p>
 					</div>
 				</div>
-        <hr className={styles.hr}/>
-
+				<hr className={styles.hr} />
 				<div className={styles.footer}>
 					<img className={styles.ficons} src={home} alt="img" />
 					<img className={styles.ficons} src={traject} alt="img" />
