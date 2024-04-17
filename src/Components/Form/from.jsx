@@ -22,7 +22,7 @@ export default function AlertDialog() {
   return (
     <React.Fragment>
       <Button variant="outlined" onClick={handleClickOpen}>
-      Rechargez votre porte-monnaie
+      commande
       </Button>
       <Dialog
         open={open}
