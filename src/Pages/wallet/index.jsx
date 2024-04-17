@@ -58,12 +58,7 @@ const Wallet = () => {
 					</div>
 				</div>
 				<hr className={styles.hr} />
-				<div className={styles.footer}>
-					<img className={styles.ficons} src={home} alt="img" />
-					<img className={styles.ficons} src={traject} alt="img" />
-					<img className={styles.ficons} src={camera} alt="img" />
-					<img className={styles.ficons} src={person} alt="img" />
-				</div>
+				
 			</div>
 		</div>
 	);
