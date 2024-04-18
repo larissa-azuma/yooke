@@ -2,10 +2,7 @@ import React from "react";
 import styles from "./index.module.css";
 import image4 from "../../assets/image4.png";
 import image5 from "../../assets/image5.png";
-import home from "../../assets/home.png";
-import traject from "../../assets/traject.png";
-import camera from "../../assets/camera.png";
-import person from "../../assets/person.png";
+
 
 const Wallet = () => {
 	return (
