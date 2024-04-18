@@ -1,0 +1,25 @@
+/* .h3{
+    font-family:'Jost';
+    text-align: center;
+    top:left;
+} */
+.heading {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.title {
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: center;
+}
+.sub{
+  display: flex;
+}
+.subb{
+  display: flex;
+  flex-direction: column;
+}
