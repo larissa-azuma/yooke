@@ -1,8 +1,12 @@
 import React from 'react'
+import NavBottom from '../Components/NavBottom';
 
 function Accueil() {
   return (
-    <div>Accueil</div>
+    <>
+        <NavBottom/>
+    </>
+
   )
 }
 

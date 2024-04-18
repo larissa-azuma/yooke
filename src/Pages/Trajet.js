@@ -1,8 +1,11 @@
 import React from 'react'
+import NavBottom from '../Components/NavBottom';
 
 function Trajet() {
   return (
-    <div>Trajet</div>
+    <>
+        <NavBottom/>
+    </>
   )
 }
 

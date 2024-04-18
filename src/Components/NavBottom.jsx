@@ -9,8 +9,6 @@ import { useState } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 
-
-
 //creating a custom theme to implement colors from figma file
 const theme = createTheme({
   palette: {
@@ -40,8 +38,9 @@ const NavBottom = () => {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction to='/'
-        component={Link}
+        <BottomNavigationAction
+          to="/"
+          component={Link}
           label="Accueil"
           icon={<HomeIcon />}
           sx={{
@@ -50,8 +49,9 @@ const NavBottom = () => {
             },
           }}
         />
-        <BottomNavigationAction to='/trajet'
-        component={Link}
+        <BottomNavigationAction
+          to="/trajet"
+          component={Link}
           label="Trajet"
           icon={<NearMeIcon />}
           sx={{
@@ -60,8 +60,9 @@ const NavBottom = () => {
             },
           }}
         />
-        <BottomNavigationAction to='/portefeuille'
-        component={Link}
+        <BottomNavigationAction
+          to="/wallet"
+          component={Link}
           label="Portefeuille"
           icon={<AccountBalanceWalletIcon />}
           sx={{
@@ -70,8 +71,9 @@ const NavBottom = () => {
             },
           }}
         />
-        <BottomNavigationAction to='/compte'
-        component={Link}
+        <BottomNavigationAction
+          to="/compte"
+          component={Link}
           label="Compte"
           icon={<PersonIcon />}
           sx={{
