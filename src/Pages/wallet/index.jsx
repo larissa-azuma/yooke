@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./index.module.css";
 import image4 from "../../assets/image4.png";
 import image5 from "../../assets/image5.png";
+import { Link } from "react-router-dom";
 
 
 const Wallet = () => {
@@ -15,7 +16,10 @@ const Wallet = () => {
           <div className={styles.flexbox}>
             <p className={styles.parag}>Montant disponible</p>
             <p className={styles.price}>800 FCFA</p>
+            <Link to='/largent'>
             <button className={styles.button}>Recharger</button>
+            </Link>
+            
           </div>
         </div>
         <p className={styles.liste}>Liste des Transactions</p>

@@ -29,8 +29,9 @@ const NavBottom = () => {
       <BottomNavigation
         sx={{
           width: "100%",
-          position: "absolute",
+          position: "fixed",
           bottom: "0",
+          zIndex: 1000,
         }}
         value={value}
         showLabels
