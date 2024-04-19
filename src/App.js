@@ -1,3 +1,8 @@
+
+import React from 'react'
+
+
+
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Accueil from "./Pages/Accueil";
@@ -21,6 +26,7 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
+
 }
 
 export default App;
