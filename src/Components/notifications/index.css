@@ -1,0 +1,87 @@
+/* body{
+    margin: 0px 0px 0px 0px;
+} */
+/* .main{
+    padding: 2rem;
+
+} */
+
+/* .valid-nav {
+    background-color: #009245;
+    width: full;
+    height: 188px;
+    padding: 2rem;
+  } */
+  
+  .valide {
+    align-content: center;
+    font-family: "Jost", sans-serif;
+    color: aliceblue;
+    line-height: 27.94px;
+    background-color: #009245;
+    width: full;
+    height: 188px;
+    padding: 2rem;
+    justify-content: space-between;
+  }
+  
+ 
+  .avn{
+    padding-left: 1.5rem;
+  }
+  
+  .h2-2{
+      align-content: center;
+      font-family: "Jost", sans-serif;
+      font-weight: 400;
+      line-height: 1px;
+    color: rgb(13, 13, 14);
+    padding: 2rem;
+    margin-bottom: 5px;
+    
+  }
+  
+  .p1{
+  justify-content: right ;
+      font-family: "Jost", sans-serif;
+      font-weight: 300;
+      line-height: 1px;
+    color: rgb(13, 13, 14);
+    padding-right: 5rem;
+    margin-top: 1px;
+    margin-right: 50px;
+  
+  }
+  
+  .p2{
+    
+  text-align: justify;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  }
+
+  .img{
+    border-radius: 50px;
+  }
+
+  .div-sub2{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .h2-center{
+    text-align: center;
+  }
+
+  .div-4{
+    text-align: left;
+  }
+
+  .imgtext{
+    display: flex;
+    
+  }
+  .p2.a{
+    justify-content: center;
+  }
