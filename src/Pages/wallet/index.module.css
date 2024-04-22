@@ -1,0 +1,168 @@
+
+.wallet {
+	width: 100%;
+	height: 1350px;
+	margin-top: 100px;
+	
+}
+.flexbox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid;
+	width: 90%;
+	height: 300px;
+	padding: 30px;
+	background-color: #001023;
+	color: white;
+}
+
+.flexboxx {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+.parag {
+	font-family: Jost;
+	font-size: 15.67px;
+	font-weight: 400;
+	line-height: 19.75px;
+	text-align: left;
+}
+.parag:hover {
+	text-decoration: underline 2px #22cea6;
+}
+.price {
+	font-family: Jost;
+	font-size: 40.14px;
+	font-weight: 700;
+	line-height: 58px;
+	text-align: center;
+}
+
+.button {
+	width: 153.33px;
+	height: 37.67px;
+	gap: 0px;
+	opacity: 0px;
+	border-radius: 10px;
+	font-family: Jost;
+	font-size: 15.01px;
+	font-weight: 500;
+	line-height: 21.69px;
+	text-align: center;
+	width: 150px;
+	height: 40px;
+	gap: 0px;
+	opacity: 0px;
+	color: #001023;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+}
+.icons {
+	width: 16.8px;
+	height: 16.8px;
+	top: 437px;
+	left: 32px;
+	gap: 0px;
+	opacity: 0px;
+	color: black;
+}
+.duo {
+	width: 135px;
+	height: 22px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Jost;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 21.68px;
+}
+
+.date {
+	width: 141px;
+	height: 17px;
+	top: 447px;
+	left: 65px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Jost;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 17.34px;
+	text-align: left;
+	color: #b3b3b3;
+}
+
+.pricce {
+	width: 100px;
+	height: 30px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Jost;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 21.68px;
+	text-align: right;
+	color: #d4145a;
+}
+
+.priccee {
+	width: 100px;
+	height: 30px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Jost;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 21.68px;
+	text-align: right;
+	color: #22cea6;
+}
+
+.liste {
+	width: 175px;
+	height: 28px;
+	gap: 0px;
+	opacity: 0px;
+	font-family: Jost;
+	font-size: 19.33px;
+	font-weight: 400;
+	line-height: 27.94px;
+	margin-top: 50px;
+	border: 2px;
+}
+
+.fleex {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 450px;
+	color: black;
+	width: 100%;
+	height: 71px;
+	top: 5px;
+	gap: 0px;
+	opacity: 0px;
+	border-top: 2px solid gray;
+}
+
+
+.hr {
+	width: 60%;
+	height: 1px;
+	color: #e5e5e5;
+}
+
+
+
