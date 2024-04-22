@@ -8,38 +8,42 @@ import PaymentsOutlinedIcon from '@mui/icons-material/PaymentsOutlined';
 
 function Valide() {
   return (
-    <div className="main">
-      <div className="valide">
-        <div className="divp">
-        <h1> 
-           <ArrowBackIosIcon />
+    <div className="wrapper">
+      <div className="primary-header">
+        <div className="primary-header_content">
+        <h1 className="element-1"> 
+           <ArrowBackIosIcon sx={{height:"auto"}} />
            Les détails du trajet en cours
            </h1>
-        </div>
+        
           
 
-          <h3>
+          <h3 className="element-2">
             <LocalTaxiOutlinedIcon />
             En route vers votre destination
             </h3>
-          <p className="avn">Avenue des Banques</p>
-      
+          <p className="card-down">Avenue des Banques</p>
+          </div>
       </div>
       <div>
         <div>
-          <h2 className="h2-2">
-            <EventSeatIcon/>
+          <h2 className="element-3">
+            <EventSeatIcon sx={{height:'auto'}}/>
             Nombre de Places Réservées
             </h2>
-          <p className="p1">Vous avez 2 places réservées</p>
-          <hr/>
+          
+          
           <div className="imgtext">
             <div> 
             
             </div>
-            <div className="push">
-            <p className="p2.a">
-            <img src={Valideimg} className="img"  alt="booking"/>
+            <div className="image-content">
+            <img src={Valideimg}  alt="booking"/>
+            <div>
+            <p className="p1">Vous avez 2 places réservées</p>
+
+            <p className="p-2">
+           
             Veuillez noter que le trajet ne commencera<br/>
              qu'une fois que les places restantes seront <br/>
             réservées et qu'un chauffeur aura été
@@ -47,18 +51,19 @@ function Valide() {
              votre voyage.
           </p>
             </div>
+            </div>
          
           </div>
          
-          <div className="div-sub2">
-            <h4>
+          <div className="wrapper-2">
+            <p className="p-4">
               <PaymentsOutlinedIcon/>
               Tarif du trajet
-              </h4>
-            <h4 className="h-center">500 FCFA/place</h4>
+              </p>
+            <p className="h-center">500 FCFA/place</p>
           </div>
-          <div className="h2-center">
-          <h2 >1 000 FCFA</h2>
+          <div className="h1-center">
+          <h1 >1 000 FCFA</h1>
           <p>2 Places Réservées</p>
           </div>
          
@@ -68,7 +73,7 @@ function Valide() {
             <p>Informations sur le véhicule</p>
             <h4>ToyotaYaris (Rouge) | LT 3456 BM</h4>
             <p>Nom du Chauffeur</p>
-            <h3>Didier</h3>
+            <h3 className="h-3">Didier</h3>
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import Largent from "./Components/l'argent/Largent";
 import Alert1 from "./Components/popups/Alert";
 import Journey from "./Pages/Journey";
 import Journey2 from "./Pages/Trajet2";
+import Valide from "./Components/notifications/Valide";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/alert1" element={<Alert1/>} />
             <Route path="/journey" element={<Journey/>} />
             <Route path="/journey2" element={<Journey2/>} />
+            <Route path="/valid" element={<Valide/>} />
           
           </Route>
         </Routes>
