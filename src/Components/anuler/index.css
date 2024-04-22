@@ -1,0 +1,36 @@
+.text{
+display: flex;
+gap: 5px;
+margin-left: 10px;
+margin-top: 40px;
+
+   
+}
+
+.back{
+    
+    background-color:#009245 ;
+    color: white;
+    height: 140px;
+    /* padding: 10px;
+    margin-right: 5px; */
+    /* margin-bottom: 10px; */
+    
+   
+}
+
+.cont{
+    padding-block: 4rem;
+}
+
+.toyota{
+    display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+   margin-top: 20px;
+    
+}
+
+.nom{
+    margin-left: 10px;
+}
