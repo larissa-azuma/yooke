@@ -5,6 +5,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
+import { Link } from "react-router-dom";
 
 export default function Alert1() {
   const [open, setOpen] = React.useState(false);
@@ -26,22 +27,21 @@ export default function Alert1() {
           fontWeight: "bold",
           textTransform: "none",
           backgroundColor: "black",
-         width: "99%",
-         
+          width: "99%",
+
           position: "fixed",
           bottom: "60px",
           left: "5px",
-          right:"5px",
+          right: "5px",
           zIndex: 2,
-          borderRadius:"8px",
+          borderRadius: "8px",
           "&:hover": {
             backgroundColor: "black",
             boxShadow: "none",
-        
-          }
+          },
         }}
       >
-       Commande
+        Commande
       </Button>
 
       <Dialog
@@ -56,9 +56,9 @@ export default function Alert1() {
             sx={{
               width: "15%",
               height: "10%",
-              top: "10px", 
+              top: "10px",
               marginTop: "5px",
-              justifyContent: "center"
+              justifyContent: "center",
             }}
           />
           <DialogContentText
@@ -71,6 +71,8 @@ export default function Alert1() {
         </DialogContent>
         <DialogActions>
           <Button
+          to='/journey'
+          component={Link}
             onClick={handleClose}
             autoFocus
             sx={{
@@ -79,8 +81,8 @@ export default function Alert1() {
               color: "white",
               "&:hover": {
                 backgroundColor: " #001023",
-                boxShadow: ""
-              }
+                boxShadow: "",
+              },
             }}
           >
             Voir le voyage réservé

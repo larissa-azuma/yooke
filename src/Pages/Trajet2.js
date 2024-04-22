@@ -9,7 +9,7 @@ import img from "../assets/avartar.png"
 import PaymentsIcon from "@mui/icons-material/Payments";
 import Button from "@mui/material/Button";
 
-function Journey() {
+function Journey2() {
   return (
     <React.Fragment>
       <CssBaseline />
@@ -196,4 +196,4 @@ function Journey() {
   );
 }
 
-export default Journey;
+export default Journey2;

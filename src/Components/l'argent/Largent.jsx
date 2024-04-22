@@ -13,8 +13,8 @@ import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutl
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from "react-router-dom";
-import Alert1 from "../popups/Pop1";
+
+import Alert1 from "../popups/Alert";
 
 
 function Largent() {
@@ -77,31 +77,7 @@ function Largent() {
         sx={{ marginBottom: "200px" }}
       />
 
-      {/* Order Button */}
-      {/* <Button 
-      to="/alert1"
-      component={Link}
-        variant="contained"
-        
-       
-        sx={{
-         
-          fontWeight: "bold",
-          textTransform: "none",
-          backgroundColor: "black",
-          width: "100%",
-          height: "40px",
-          bottom: "60px",
-          left: "60px",
-          zIndex: 2, 
-          "&:hover": {
-            backgroundColor: "black",
-            boxShadow: "none",
-          },
-        }}
-      >
-        Commande
-      </Button> */}
+   
       <Alert1/>
     </div>
   );

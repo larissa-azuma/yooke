@@ -7,8 +7,9 @@ import Compte from "./Pages/Compte";
 import Wallet from "./Pages/wallet";
 import NavBottom from "./Components/NavBottom";
 import Largent from "./Components/l'argent/Largent";
-import Alert1 from "./Components/popups/Pop1";
+import Alert1 from "./Components/popups/Alert";
 import Journey from "./Pages/Journey";
+import Journey2 from "./Pages/Trajet2";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/largent" element={<Largent />} />
             <Route path="/alert1" element={<Alert1/>} />
             <Route path="/journey" element={<Journey/>} />
+            <Route path="/journey2" element={<Journey2/>} />
           
           </Route>
         </Routes>
