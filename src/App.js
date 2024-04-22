@@ -8,6 +8,7 @@ import Wallet from "./Pages/wallet";
 import NavBottom from "./Components/NavBottom";
 import Largent from "./Components/l'argent/Largent";
 import Alert1 from "./Components/popups/Pop1";
+import Journey from "./Pages/Journey";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/compte" element={<Compte />} />
             <Route path="/largent" element={<Largent />} />
             <Route path="/alert1" element={<Alert1/>} />
+            <Route path="/journey" element={<Journey/>} />
           
           </Route>
         </Routes>
