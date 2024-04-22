@@ -31,7 +31,7 @@ const NavBottom = () => {
           width: "100%",
           position: "fixed",
           bottom: "0",
-          zIndex: 1000,
+          zIndex: 1,
         }}
         value={value}
         showLabels
