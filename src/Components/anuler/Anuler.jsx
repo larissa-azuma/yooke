@@ -163,7 +163,8 @@ function Journey2() {
                       width: "226px",
                       height: "59px",
                       fontFamily: "jost",
-                      marginLeft: "50px",
+                      marginLeft: "20px",
+                      marginRight:"15px"
                     }}
                   >
                     Veuillez noter que le trajet ne commencera qu'une fois que
