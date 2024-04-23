@@ -26,7 +26,7 @@ function Valide() {
           </div>
       </div>
       <div>
-        <div>
+        <div className="wrapper-3">
           <h2 className="element-3">
             <EventSeatIcon sx={{height:'auto'}}/>
             Nombre de Places Réservées

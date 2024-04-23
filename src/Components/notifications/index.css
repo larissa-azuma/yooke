@@ -125,7 +125,8 @@ gap: 3px;
 
   img{
     border-radius: 100%;
-    size: 50px;
+    width: 100px;
+  height: 150px;
   }
 
   .image-content{
@@ -141,7 +142,9 @@ gap: 25px;
     justify-content: space-between;
     
   }
-
+.wrapper-3{
+  margin: 20px;
+}
   .p-4{
     display: flex;
     gap: 20px;
