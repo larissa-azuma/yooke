@@ -8,6 +8,7 @@ import Avatar from "@mui/material/Avatar";
 import img from "../assets/avartar.png"
 import PaymentsIcon from "@mui/icons-material/Payments";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 function Journey() {
   return (
@@ -168,6 +169,8 @@ function Journey() {
             <p style={{ marginRight: "10px", fontFamily:"jost"}}>12 000 FCFA</p>
            
             <Button
+            to='/journey2'
+            component={Link}
         variant="contained"
         sx={{
           // borderBottomLeftRadius: "24px",
