@@ -30,6 +30,7 @@ function App() {
             <Route path="/journey" element={<Journey/>} />
             <Route path="/journey2" element={<Journey2/>} />
             <Route path="/valid" element={<Valide/>} />
+           
           
           </Route>
         </Routes>
