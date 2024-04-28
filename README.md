@@ -1,70 +1,194 @@
-# Getting Started with Create React App
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+const Register = () => {
+  const navigate = useNavigate();
+  const [inputValue, setInputValue] = useState({
+    email: "",
+    password: "",
+    username: "",
+    firstName: "",
+    lastName: "",
+  });
+  const { email, password, username, firstName, lastName } = inputValue;
 
-## Available Scripts
+  const handleOnChange = (e) => {
+    const { name, value } = e.target;
+    setInputValue({
+      ...inputValue,
+      [name]: value,
+    });
+  };
 
-In the project directory, you can run:
+  const handleError = (err) =>
+    toast.error(err, {
+      position: "bottom-left",
+    });
+  const handleSuccess = (msg) =>
+    toast.success(msg, {
+      position: "bottom-right",
+    });
 
-### `npm start`
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('https://fakestoreapi.com/users', {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email,
+          username,
+          password,
+          name: {
+            firstname: firstName,
+            lastname: lastName
+          }
+        })
+      });
+      const data = await response.json();
+      if (response.ok) {
+        handleSuccess("User created successfully!");
+        setTimeout(() => {
+          navigate("/");
+        }, 1000);
+      } else {
+        handleError(data.message || "Failed to create user");
+      }
+    } catch (error) {
+      console.log(error);
+      handleError("An error occurred while creating user");
+    }
+  };
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  return (
+    <div className=" bg-black dark:bg-gray-900 flex
+justify-center px-6 py-12">
+      <div className="justify-center w-full xl:w-3/4 lg:w-11/12 flex">
+        <div className="w-full h-auto bg-gray-400 dark:bg-gray-800
+hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
+          style={{ backgroundImage:
+"url('https://images.unsplash.com/photo-1568051243851-f9b136146e97?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+}}></div>
+        <div className="w-full lg:w-4/12 bg-white dark:bg-gray-700 p-5
+rounded-lg lg:rounded-l-none">
+          <h3 className="py-4 text-2xl text-center text-gray-800
+dark:text-white font-bold">Create an Account</h3>
+          <form className="px-8 pt-6 pb-8 mb-4 bg-white
+dark:bg-gray-800 rounded" onSubmit={handleSubmit}>
+            <div className="mb-4">
+              <div className="mb-4">
+                <label className="block mb-2 text-sm font-bold
+text-gray-700 dark:text-white" htmlFor="UserName">
+                  Username
+                </label>
+                <input
+                  className="w-full px-3 py-2 mb-3 text-sm
+leading-tight text-gray-700 dark:text-white border rounded shadow
+appearance-none focus:outline-none focus:shadow-outline"
+                  id="username"
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                  value={username}
+                  onChange={handleOnChange}
+                />
+              </div>
 
-### `npm run build`
+            </div>
+            <div className="mb-4">
+              <label className="block mb-2 text-sm font-bold
+text-gray-700 dark:text-white" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="w-full px-3 py-2 mb-3 text-sm leading-tight
+text-gray-700 dark:text-white border rounded shadow appearance-none
+focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={email}
+                onChange={handleOnChange}
+              />
+              </div>
+              <div className="mb-4">
+              <label className="block mb-2 text-sm font-bold
+text-gray-700 dark:text-white" htmlFor="password">
+                Password
+              </label>
+              <input
+                className="w-full px-3 py-2 mb-3 text-sm leading-tight
+text-gray-700 dark:text-white border rounded shadow appearance-none
+focus:outline-none focus:shadow-outline"
+                id="password"
+                type="password"
+                name="password"
+                placeholder="******************"
+                value={password}
+                onChange={handleOnChange}
+              />
+            </div>
+              <div className="mb-4">
+              <label className="block mb-2 text-sm font-bold
+text-gray-700 dark:text-white" htmlFor="confirm">
+                Confirm Password
+              </label>
+              <input
+                className="w-full px-3 py-2 mb-3 text-sm leading-tight
+text-gray-700 dark:text-white border rounded shadow appearance-none
+focus:outline-none focus:shadow-outline"
+                id="confirm"
+                type="confirm"
+                name="confirm"
+                placeholder="******************"
+                value={confirm}
+                onChange={handleOnChange}
+              />
+            </div>
+            
+            <div className="mb-6 text-center">
+              <button
+                className="w-full px-4 py-1 font-bold text-white
+bg-brightColor rounded-full hover:bg-brightColor dark:bg-brightColor
+dark:text-white dark:hover:bg-black focus:outline-none
+focus:shadow-outline"
+                type="submit"
+              >
+                Register Account
+              </button>
+            </div>
+            <hr className="mb-6 border-t" />
+            <div className="text-center">
+              <a className="inline-block text-sm text-black
+dark:text-blue-500 align-baseline "
+                href="./login">
+                Already have an account? Login
+              </a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+              <a href="/" className="flex font-semibold text-black
+text-sm mt-10">
+            <svg className="fill-current mr-2 text-black w-4"
+viewBox="0 0 448 512">
+              <path d="M134.059 296H436c6.627 0 12-5.373
+12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029
+239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119
+40.971 4.411 40.971-16.971V296z" />
+            </svg>
+            Back To Home
+          </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+export default Register;
